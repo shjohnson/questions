@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-
-# Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
 # Use SCSS for stylesheets
@@ -23,8 +20,12 @@ group :development do
   gem "binding_of_caller"
 end
 
-group :development, :test do
+ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+end
+
+group :test do
+	gem 'capybara' 
 end
 
 # Use jquery as the JavaScript library
